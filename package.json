@@ -7,11 +7,27 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "1.12.1",
+    "@nuxtjs/sitemap": "7.5.2",
+    "@tdesign-vue-next/nuxt": "0.1.5",
+    "lodash-es": "^4.17.22",
     "nuxt": "^4.2.2",
+    "tdesign-icons-vue-next": "^0.4.1",
+    "tdesign-vue-next": "^1.18.0",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "@unocss/nuxt": "66.5.12",
+    "@unocss/preset-attributify": "^66.5.12",
+    "@unocss/preset-wind3": "^66.5.12",
+    "eslint": "^9.39.2",
+    "unocss": "^66.5.12"
   }
 }
