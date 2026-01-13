@@ -162,7 +162,6 @@
 
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
 import { useUserStore } from '../stores/user';
 import { useConfigStore } from '../stores/config';
 
@@ -200,7 +199,7 @@ const goToProfile = () => {
 // 导航到我的项目
 const goToMyProjects = () => {
   showMobileMenu.value = false;
-  router.push('/app');
+  router.push('/projects');
 };
 
 // 导航到偏好设置

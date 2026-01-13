@@ -65,7 +65,6 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/user';
 
 // 路由实例

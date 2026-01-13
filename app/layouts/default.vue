@@ -3,7 +3,16 @@
     <t-layout :class="configStore.theme" class="min-h-screen flex flex-col">
       <AppHeader />
       <main class="flex-grow">
-        <slot />
+        <div class="baseList-container relative">
+          <slot />
+          <!-- 回到顶部按钮 -->
+          <t-back-top 
+            container=".baseList-container" 
+            :visible-height="0" 
+            style="position: absolute" 
+            :offset="['24px', '80px']" 
+          ></t-back-top>
+        </div>
       </main>
       <AppFooter />
     </t-layout>
